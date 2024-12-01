@@ -44,7 +44,7 @@ function App() {
       <Header  headerName={headerName} setHeaderName={setHeaderName} />
       
       <Routes>
-         <Route path='/' element={<Home items={searchData} headerName={headerName} setHeaderName={setHeaderName}/>}/>
+         <Route path='/' element={<Home items={searchData} headerName={headerName} setHeaderName={setHeaderName} setSearch={setSearch}/>}/>
       <Route path='/certificates'   element={<Certifiactes headerName={headerName} setHeaderName={setHeaderName}/>}/>
       <Route path='/resume' element={<Resume image={image} setImage={setImage} headerName={headerName} setHeaderName={setHeaderName}/>}/>
       <Route path='/git'  element={<Git headerName={headerName} setHeaderName={setHeaderName}/>} />
