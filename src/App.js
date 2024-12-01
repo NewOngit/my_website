@@ -1,13 +1,13 @@
 
 import Home from './Home';
 import Header from './Header';
-import Nav from './Nav';
 import Git from './Git';
 import Certifiactes from './Certificates';
 import Resume from './Resume';
 import About from './About';
 import Footer from './Footer';
 import Missing from './Missing';
+import Mywebsite from './Mywebsite';
 import { Routes,Route } from 'react-router';
 import { useEffect, useState } from 'react';
 function App() {
@@ -42,7 +42,7 @@ function App() {
   return (
     <div className='App' >
       <Header  headerName={headerName} setHeaderName={setHeaderName} />
-      <Nav search={search} setSearch={setSearch}/>
+      
       <Routes>
          <Route path='/' element={<Home items={searchData} headerName={headerName} setHeaderName={setHeaderName}/>}/>
       <Route path='/certificates'   element={<Certifiactes headerName={headerName} setHeaderName={setHeaderName}/>}/>
@@ -50,6 +50,7 @@ function App() {
       <Route path='/git'  element={<Git headerName={headerName} setHeaderName={setHeaderName}/>} />
       <Route path='/about' element={<About headerName={headerName} setHeaderName={setHeaderName}/>}/>
       <Route path='*' element={<Missing headerName={headerName} setHeaderName={setHeaderName}/> }/>
+      <Route path='/my_website' element={<Mywebsite/>}/>
       </Routes>
       <Footer/>
     </div>
