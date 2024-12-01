@@ -7,7 +7,46 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.App{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.Home,.Git,.Certificates,.Resume {
+  flex-grow: 1;
+  overflow: auto;
+}
+.Git{
+  flex-grow: 1;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.cert{
+  display: flex;
+ flex-wrap: wrap;
+ flex-grow: 1;
+justify-content: flex-start;
+gap: 2rem;  
+align-content: center;
+}
+Link{
+  text-decoration: none;
+  color: black;
+}
+
+h1{
+  margin: 0;
+  padding: 0;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+.myForm{
+  display: flex;
+  width: 100%;
+  background-color: black;
 }
